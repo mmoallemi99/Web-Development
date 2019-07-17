@@ -36,3 +36,25 @@
 .slider__item_des {
     @include typographyStyle($font-stack, 13px, 500, 24px, $text-color);
 }
+
+//portfolio
+.portfolio__title {
+    @include typographyStyle($font-stack, 23px, bold, 1.1, $header-color);
+    text-transform: uppercase;
+}
+
+.portfolio__category_link {
+    text-decoration: none;
+    text-transform: capitalize;
+    @include typographyStyle($font-stack, 14px, 400, 1.42, $text-color);
+}
+
+.portfolio__gallery_overlay_subtitle {
+    text-transform: capitalize;
+    @include typographyStyle($font-stack, 13px, 400, 1.42, $black-color);
+}
+
+.portfolio__gallery_overlay_heading {
+    text-transform: capitalize;
+    @include typographyStyle($font-stack, 22px, bold, 1.1, $black-color);
+}

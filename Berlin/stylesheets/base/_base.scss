@@ -9,6 +9,8 @@
 
 body {
     background: $base-color;
+    position: relative;
+    z-index: -10;
 }
 .container {
     width: 75%;
