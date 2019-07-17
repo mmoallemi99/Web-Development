@@ -7,11 +7,17 @@
     margin-top: -170px;
     position: relative;
     z-index: -1;
+    @include responsive("phone") {
+        @include hexagonStyle(50% 0%, 100% 0, 100% 90%, 74% 95%, 0 90%, 0 0);
+    }
 }
 
 .about__image {
     flex-basis: 40%;
     padding: 50px;
+    @include responsive("phone") {
+        flex-basis: 100%;
+    }
 }
 
 .about__image_img {
@@ -24,6 +30,9 @@
 .about__content {
     flex-basis: 60%;
     padding-top: 70px;
+    @include responsive("phone") {
+        flex-basis: 100%;
+    }
 }
 
 .about__content_title {
@@ -45,6 +54,9 @@
     flex-basis: 33.33%;
     padding: 10px;
     display: flex;
+    @include responsive("phone") {
+        flex-basis: 100%;
+    }
 }
 
 .slider__item_icon {
@@ -67,6 +79,9 @@
     position: relative;
     margin-top: -300px;
     z-index: -2;
+    @include responsive("phone") {
+        @include hexagonStyle(50% 0%, 100% 0, 100% 95%, 25% 99%, 0 95%, 0 0);
+    }
 }
 
 .portfolio__title {
@@ -93,6 +108,9 @@
     flex-basis: 33.33%;
     padding: 20px;
     padding-left: 0;
+    @include responsive("phone") {
+        flex-basis: 100%;
+    }
 }
 
 .portfolio__gallery_link {
@@ -147,11 +165,18 @@
     position: relative;
     z-index: -3;
     margin-top: -350px;
+    @include responsive("phone") {
+        @include hexagonStyle(50% 0%, 100% 0, 100% 95%, 75% 99%, 0 95%, 0 0);
+    }
 }
 
 .blogs__items {
     display: flex;
     justify-content: space-between;
+    @include responsive("phone") {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
 }
 
 .blogs__title {
@@ -161,6 +186,11 @@
 
 .blogs__items_blog {
     flex-basis: 32%;
+    @include responsive("phone") {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
 }
 
 .blog__image {
@@ -201,10 +231,16 @@
 
 .contact__info {
     flex-basis: 40%;
+    @include responsive("phone") {
+        flex-basis: 100%;
+    }
 }
 
 .contact__form {
     flex-basis: 60%;
+    @include responsive("phone") {
+        flex-basis: 100%;
+    }
 }
 
 .contact__info_title {
@@ -265,4 +301,7 @@ textarea {
 
 .form-group-button {
     text-align: right;
+    @include responsive("phone") {
+        text-align: center;
+    }
 }

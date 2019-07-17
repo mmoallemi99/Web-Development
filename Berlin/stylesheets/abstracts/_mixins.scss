@@ -54,3 +54,23 @@
         } 
     }
 }
+
+@mixin responsive($device) {
+    @if ($device == "phone") {
+        @media (max-width: 575.98px) { 
+            @content
+        }
+    } @else if ($device == "land_phone" ) {
+        @media (max-width: 767.98px) { 
+            @content
+        }
+    } @else if ($device == "tablet" ) {
+        @media (max-width: 991.98px) { 
+            @content
+        }
+    } @else if ($device == "small_desktop" ) {
+        @media (max-width: 1199.98px) { 
+            @content
+        }
+    } 
+}

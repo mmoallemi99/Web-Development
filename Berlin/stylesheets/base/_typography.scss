@@ -3,10 +3,16 @@
  */
 .header__title {
     @include typographyStyle($font-stack, 75px, bold, 1.1, $base-color);
+    @include responsive("phone") {
+        @include typographyStyle($font-stack, 40px, bold, 1.1, $base-color);
+    }
 }
 
 .header__icons_social {
     @include typographyIcons(15px, $base-color);
+    @include responsive("phone") {
+        @include typographyIcons(12px, $base-color);
+    }
 }
 
 .header__action_icon {
@@ -121,6 +127,9 @@
     text-align: right;
     padding-top: 60px;
     @include typographyStyle($font-stack, 23px, bold, 1.1, $header-color);
+    @include responsive("phone") {
+        text-align: center;
+    }
 }
 
 //footer
