@@ -58,3 +58,89 @@
     text-transform: capitalize;
     @include typographyStyle($font-stack, 22px, bold, 1.1, $black-color);
 }
+
+//blogs
+.blogs__title {
+    text-transform: uppercase;
+    @include typographyStyle($font-stack, 23px, bold, 1.1, $header-color);
+}
+
+.blog__title {
+    text-transform: capitalize;
+    @include typographyStyle($font-stack, 18px, bold, 27px, $header-color);
+}
+
+.blog__body {
+    @include typographyStyle($font-stack, 15px, 400, 25px, $text-color);
+}
+
+.blog__author {
+    @include typographyStyle($font-stack, 12px, 600, 17.14px, $black-color);
+}
+
+.blog__date {
+    @include typographyStyle($font-stack, 12px, 300, 17.14px, $text-color);
+}
+
+.blogs__link_link {
+    text-transform: capitalize;
+    text-decoration: none;
+    @include typographyStyle($font-stack, 12px, 300, 17.14px, $header-color);
+    &:hover {
+        color: $base-color;
+    }
+}
+
+//contact
+.contact__info_title {
+    @include typographyStyle($font-stack, 23px, bold, 1.1, $header-color);
+}
+
+.contact__info_details {
+    @include typographyStyle($font-stack, 14.5px, 400, 36px, $text-color);
+}
+
+.contact__socials {
+    text-decoration: none;
+    padding: 0 8px;
+    @include typographyIcons(12px, $black-color);
+    i {
+        transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+        @include applyColor($icons);
+        i {
+            transform: scale(1.4);
+        }
+    }
+}
+
+
+//contact form
+.contact__form_title {
+    text-align: right;
+    padding-top: 60px;
+    @include typographyStyle($font-stack, 23px, bold, 1.1, $header-color);
+}
+
+//footer
+.footer__item_link {
+    text-decoration: none;
+    @include typographyStyle($font-stack, 13px, 400, 1.42, $footer-color);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        color: $footer-hover;
+    }
+}
+
+.footer__copyright {
+    text-align: center;
+    padding-top: 50px;
+    @include typographyStyle($font-stack, 13px, 400, 1.42, $footer-hover);
+}
+
+.footer__company {
+    text-align: center;
+    padding-top: 10px;
+    @include typographyStyle($font-stack, 13px, 400, 1.42, $footer-hover);
+}

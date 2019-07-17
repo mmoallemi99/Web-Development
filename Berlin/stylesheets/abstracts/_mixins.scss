@@ -20,7 +20,37 @@
     clip-path: polygon($first, $second, $third, $forth, $fifth, $sixth);
 }
 
-@mixin hexagonStyleSections($color, $point) {
-    clip-path: polygon(50% 0%, 100% 0, 100% 80%, $point, 0 78%, 0 0);
+@mixin hexagonStyleSections($color, $point, $point2) {
+    clip-path: polygon(50% 0%, 100% 0, 100% 80%, $point, $point2, 0 0);
     background: $color;
+}
+
+@mixin applyColor($icons) {
+    @each $icon in $icons {
+        @if ($icon == 'fa-facebook-f') {
+            & .#{$icon} {
+                color: $facebook-color;
+            }
+        } @else if ($icon == 'fa-twitter') {
+            & .#{$icon} {
+                color: $twitter-color;
+            }
+        } @else if ($icon == 'fa-instagram') {
+            & .#{$icon} {
+                color: $instagram-color;
+            }
+        } @else if ($icon == 'fa-google-plus-g') {
+            & .#{$icon} {
+                color: $google-plus-color;
+            }
+        } @else if ($icon == 'fa-behance') {
+            & .#{$icon} {
+                color: $behance-color;
+            }
+        } @else if ($icon == 'fa-dribbble') {
+            & .#{$icon} {
+                color: $dribble-color;
+            }
+        } 
+    }
 }

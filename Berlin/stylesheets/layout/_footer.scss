@@ -1,3 +1,18 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.footer {
+    padding: 60px 0;
+    background: $black-color;
+}
+
+.footer__socials {
+    list-style: none;
+    color: $text-color;
+    text-align: center;
+}
+
+.footer__socials_item {
+    display: inline-block;
+    padding: 0 8px;
+}

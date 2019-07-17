@@ -2,7 +2,7 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 .about {
-    @include hexagonStyleSections($light-gray, 76% 96%);
+    @include hexagonStyleSections($light-gray, 76% 96%, 0 78%);
     padding: 300px 0;
     margin-top: -170px;
     position: relative;
@@ -62,8 +62,8 @@
 //portfolio
 .portfolio {
     width: 100%;
-    @include hexagonStyleSections($base-color, 21% 96%);
-    padding: 300px 0;
+    @include hexagonStyleSections($base-color, 21% 96%, 0 85%);
+    padding: 300px 0 500px 0;
     position: relative;
     margin-top: -300px;
     z-index: -2;
@@ -137,4 +137,132 @@
     transform: translateY(50px);
     transition: all 0.5s ease-in-out;
     opacity: 0;
+}
+
+//blogs
+.blogs {
+    width: 100%;
+    @include hexagonStyleSections($light-gray, 76% 96%, 0 85%);
+    padding: 400px 0 400px 0;
+    position: relative;
+    z-index: -3;
+    margin-top: -350px;
+}
+
+.blogs__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogs__title {
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.blogs__items_blog {
+    flex-basis: 32%;
+}
+
+.blog__image {
+    width: 100%;
+}
+
+.blog__title {
+    margin: 30px 0;
+}
+
+.blog__body {
+    margin-bottom: 30px;
+}
+
+.blogs__link {
+    margin-top: 100px;
+    text-align: right;
+    padding-right: 100px;
+}
+
+.blogs__link_link {
+    padding: 10px 10px;
+    border: 1px solid $text-color;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background: $black-color;
+    }
+}
+
+.blogs__icon {
+    padding-left: 20px;
+}
+
+//contact
+.contact {
+    padding: 100px 0;
+}
+
+.contact__info {
+    flex-basis: 40%;
+}
+
+.contact__form {
+    flex-basis: 60%;
+}
+
+.contact__info_title {
+    padding-bottom: 50px;
+}
+
+.contact__info_details {
+    list-style: none;
+}
+
+.contact__info_state {
+    padding-bottom: 40px;
+}
+
+.contact__info_icons {
+    padding-top: 40px;
+}
+
+//contact form
+.form-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    .form-group {
+        flex-basis: 50%;
+        padding: 0 8px;
+    }
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $text-color;
+    &:focus {
+        border-color: $black-color;
+    }
+}
+
+textarea {
+    margin-top: 30px;
+}
+
+.form-submit {
+    display: inline-block;
+    padding: 10px 45px;
+    background: transparent;
+    border: 1px solid $black-color;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        cursor: pointer;
+        background: $black-color;
+        color: $base-color;
+    }
+}
+
+.form-group-button {
+    text-align: right;
 }
