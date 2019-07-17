@@ -1,0 +1,1379 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.underline {
+    display: inline-block;
+    width: 50px;
+    border: 2px solid #0f66e9;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+body {
+    background-color: #f2f3f4;
+}
+
+/* navbar */
+
+nav {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0f66e9;
+    transition: all 0.4s;
+    z-index: 900;
+}
+
+nav #nav-brand {
+    float: right;
+    margin-left: 200px;
+    margin-right: 130px;
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgba(255, 255, 255);
+    padding-bottom: .3125rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+nav #nav-brand:hover {
+    border: 1px solid white;
+    color: #0f66e9;
+    background: white;
+}
+
+nav ul {
+    list-style: none;
+    text-align: left;
+    margin-right: 20px;
+}
+
+nav a {
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    float: right;
+}
+
+nav a:focus {
+    outline: none;
+}
+
+nav a:hover {
+    border: 1px solid white;
+    color: #0f66e9;
+    background: white;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    max-height: 100vh;
+    background: linear-gradient(rgb(15, 102, 233, 0.3), rgb(15, 102, 233, 0.3)), url(../img/webback2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center center;
+}
+
+header .row {
+    padding: 100px 100px;
+    box-sizing: border-box;
+}
+
+header img {
+    display: block;
+    width: 100;
+    margin: auto;
+}
+
+header h1 {
+    color: white;
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    font-weight: 700;
+    font-size: 3.7rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    animation: header-animation 1s;
+}
+
+header #heading-link {
+    display: inline-block;
+    padding: 1.25rem 2.25rem;
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 50px;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+header #heading-link:hover {
+    color: #e2005a;
+}
+
+@keyframes header-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Info Section */
+
+section#section-info {
+    width: 100%;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+section#section-info .row {
+    text-align: center;
+    display: flex;
+}
+
+section#section-info h2 {
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+section#section-info .info-image {
+    margin-top: 20px;
+}
+
+section#section-info .info-image img {
+    transition: all 0.3s;
+}
+
+section#section-info .info-image img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+section#section-info p {
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    padding-right: 8%;
+    margin-top: 50px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+section#section-info a {
+    display: inline-block;
+    text-decoration: none;
+    color: #e2005a;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+
+section#section-info a:hover {
+    background-color: #e2e6ea;
+}
+
+/* Services Section */
+
+section#staff {
+    background-color: #f2f3f4;
+}
+
+section#staff .row {
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+}
+
+section#staff .masters {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section#staff .masters .master-item {
+    flex-basis: 33.33%;
+    margin-top: 70px;
+}
+
+section#staff .masters .master-item img {
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+section#staff .masters .master-item img:hover {
+    transform: scale(1.1);
+}
+
+section#staff .master-staff {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section#staff .master-staff .master-item {
+    margin-top: 80px;
+}
+
+section#staff .master-staff .master-item img {
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+section#staff .master-staff .master-item img:hover {
+    transform: scale(1.1);
+}
+
+section#staff .staff {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section#staff .staff .master-item {
+    flex-basis: 33.33%;
+    margin-top: 70px;
+}
+
+section#staff .staff .master-item img {
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+section#staff .staff .master-item img:hover {
+    transform: scale(1.1);
+}
+
+section#staff h2 {
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+section#staff h1 {
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+section#staff .master-item h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+section#staff .master-item p {
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75;
+    padding: 0 15px;
+}
+
+/* summary */
+
+section#summary {
+    width: 100%;
+    background-color: #052143;
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+section#summary .row {
+    width: 100%;
+    padding: 90px 0;
+}
+
+section#summary h2 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+section#summary p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.75;
+    padding: 0 90px;
+}
+
+section#summary table {
+    width: 100%;
+    margin-top: 50px;
+}
+
+section#summary table th, #summary table td {
+    border: 2px solid white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+section#summary table a {
+    display: inline-block;
+    padding: 1.25rem 2.25rem;
+    background-color: #0f66e9;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10rem;
+    word-spacing: 1px;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+section#summary table a:first-child {
+    margin-right: 50px;
+}
+
+section#summary table a:hover {
+    background-color: #e2005a;
+}
+
+section#summary .table-content {
+    font-size: 1rem;
+}
+
+/* time section */
+
+section#timetable {
+    width: 100%;
+    background-color: white;
+    padding: 90px 0;
+    color: black;
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+}
+
+section#timetable .row {
+    text-align: center;
+}
+
+section#timetable .row p {
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+section#timetable table {
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    width: 100%;
+}
+
+section#timetable table th, #timetable table td {
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+section#timetable tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+section#timetable h2 {
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+section#timetable a {
+    display: inline-block;
+    padding: 1.25rem 2.25rem;
+    background-color: #0f66e9;
+    color: white;
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10rem;
+    margin-top: 50px;
+    word-spacing: 1px;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+section#timetable a:nth-child(2) {
+    margin-right: 50px;
+}
+
+section#timetable a:hover {
+    background-color: #e2005a;
+}
+
+section#timetable .workshops {
+    text-align: center;
+}
+
+section#timetable .workshops h2 {
+    margin-top: 50px;
+}
+
+/* sponsors section */
+
+section#sponsors .container .sponsors-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+section#sponsors {
+    width: 100%;
+    background-color: #ff0066;
+    padding-bottom: 90px;
+    padding-top: 100px;
+    color: white;
+}
+
+section#sponsors p {
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+}
+
+section#sponsors .row {
+    text-align: center;
+}
+
+section#sponsors h2 {
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 50px;
+}
+
+section#sponsors img {
+    transition: all 0.3s;
+}
+
+section#sponsors img:hover {
+    transform: scale(1.1);
+}
+
+/* contact section */
+
+section#contact {
+    width: 100%;
+    background-color: white;
+}
+
+section#contact .title {
+    text-align: center;
+}
+
+section#contact .row {
+    padding: 150px 0;
+}
+
+section#contact .contact-items ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+section#contact h2 {
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+section#contact p {
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0 290px;
+}
+
+section#contact ul {
+    list-style: none;
+    padding-top: 50px;
+}
+
+section#contact ul p {
+    padding: 0;
+    margin-top: 20px;
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+section#contact ul i {
+    color: #6c757d;
+    font-size: 3rem;
+    transition: all 0.3s;
+}
+
+section#contact ul i:hover {
+    color: #0f66e9;
+    cursor: pointer;
+}
+
+/* footer section */
+
+footer {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #6c757d;
+}
+
+footer a {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #6c757d;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+footer a:hover {
+    cursor: pointer;
+    color: #0f66e9;
+}
+
+@font-face {
+    font-family: 'Vazir-Light';
+    src: url(../Vazir/Vazir-Light.eot);
+    src: url(../Vazir/Vazir-Light.eot) format('embedded-opentype'), /* IE6-IE8 */
+    url(../Vazir/Vazir-Light.woff2) format('woff2'), /* Super Modern Browsers */
+    url(../Vazir/Vazir-Light.woff) format('woff'), /* Pretty Modern Browsers */
+    url(../Vazir/Vazir-Light.ttf) format('truetype');
+    /* Safari, Android, iOS */
+}
+
+/* media queries */
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {
+    /* Navbar */
+    .navbar a:not(:nth-child(2)) {
+        display: none;
+    }
+    .navbar {
+        position: fixed;
+    }
+    .navbar a.icon {
+        float: left;
+        display: block;
+    }
+    .navbar.responsive {
+        position: fixed;
+    }
+    #nav-brand {
+        position: absolute;
+        display: block;
+        float: right;
+        margin: 0 !important;
+        margin-top: 10px !important;
+        margin-right: 10px !important;
+        padding: 0 !important;
+        right: 0;
+        font-size: 25px !important;
+        top: 0;
+        font-size: 1rem;
+        text-align: right;
+    }
+    .navbar.responsive a.icon {
+        position: absolute;
+    }
+    .navbar.responsive a:not(:first-child) {
+        margin-top: 20px;
+        float: none;
+        display: block;
+        text-align: right;
+    }
+    .navbar.responsive a:nth-child(3) {
+        margin-top: 40px;
+    }
+    /* Header */
+    header {
+        min-height: 100vh;
+        background-attachment: fixed;
+    }
+    header .row {
+        padding: 0;
+        padding-top: 50px;
+    }
+    header img {
+        margin-top: 50px;
+        width: 630px;
+        height: 600px;
+    }
+    header h1 {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+    header #heading-link {
+        display: none;
+        font-size: 50px;
+        margin-top: 10px;
+    }
+    /* Info */
+    section#section-info {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    section#section-info h2 {
+        font-size: 30px;
+    }
+    section#section-info .row {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    section#section-info p {
+        font-size: 20px;
+        margin-top: 0;
+    }
+    section#section-info .info-image img {
+        width: 100%;
+    }
+    /* Summary */
+    section#summary .row {
+        padding: 70px 0;
+    }
+    section#summary h2 {
+        font-size: 30px;
+    }
+    section#summary p {
+        padding: 0;
+        font-size: 20px;
+    }
+    section#summary .table-content {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    section#summary table {
+        font-size: 15px;
+    }
+    section#summary table td, th {
+        padding: 15px;
+    }
+    section#summary table a {
+        font-size: .7rem;
+        padding: 1rem 2rem;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0 !important;
+        border-radius: 50px;
+    }
+    /* timetable */
+    section#timetable h2 {
+        font-size: 30px;
+    }
+    section#timetable table {
+        font-size: 15px;
+    }
+    section#timetable table td {
+        padding: 5px;
+    }
+    section#timetable table th {
+        padding: 5px;
+    }
+    section#timetable .workshops h2 {
+        font-size: 30px;
+    }
+    section#timetable a {
+        padding: 1.25rem 2.25rem;
+        margin-left: 0;
+        margin-right: 0 !important;
+    }
+    /* Sponsors */
+    section#sponsors {
+        padding: 70px 0;
+    }
+    section#sponsors h2 {
+        margin: 0;
+    }
+    section#sponsors .container .sponsors-items {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    section#sponsors .container .sponsors-items .item {
+        margin-top: 50px;
+        padding: 20px;
+    }
+    /* Contact */
+    section#contact .row {
+        padding: 50px;
+        padding-top: 80px;
+    }
+    section#contact h2 {
+        font-size: 20px;
+    }
+    section#contact .contact-items ul {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    section#contact .contact-items ul li {
+        margin-top: 40px;
+    }
+    section#contact ul p {
+        margin-top: 0;
+    }
+    section#contact ul i {
+        padding-bottom: 10px;
+    }
+    /* footer */
+    footer {
+        padding: 30px 0;
+    }
+    /*staff*/
+    section#staff h2 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+    section#staff .masters .master-item {
+        flex-basis: 50%;
+    }
+    section#staff h1 {
+        display: none;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    /* Navbar */
+    .navbar a:not(:nth-child(2)) {
+        display: none;
+    }
+    .navbar {
+        position: fixed;
+    }
+    .navbar a.icon {
+        float: left;
+        display: block;
+    }
+    .navbar.responsive {
+        position: fixed;
+    }
+    #nav-brand {
+        position: absolute;
+        display: block;
+        float: right;
+        margin: 0 !important;
+        margin-top: 10px !important;
+        margin-right: 10px !important;
+        padding: 0 !important;
+        right: 0;
+        font-size: 25px !important;
+        top: 0;
+        font-size: 1rem;
+        text-align: right;
+    }
+    .navbar.responsive a.icon {
+        position: absolute;
+    }
+    .navbar.responsive a:not(:first-child) {
+        margin-top: 20px;
+        float: none;
+        display: block;
+        text-align: right;
+    }
+    .navbar.responsive a:nth-child(3) {
+        margin-top: 40px;
+    }
+    /* Header */
+    header {
+        min-height: 100vh;
+        background-attachment: fixed;
+    }
+    header .row {
+        padding: 0;
+        padding-top: 50px;
+    }
+    header img {
+        margin-top: 50px;
+        width: 630px;
+        height: 600px;
+    }
+    header h1 {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+    header #heading-link {
+        display: none;
+        font-size: 50px;
+        margin-top: 10px;
+    }
+    /* Info */
+    section#section-info {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    section#section-info h2 {
+        font-size: 30px;
+    }
+    section#section-info .row {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    section#section-info p {
+        font-size: 20px;
+        margin-top: 0;
+    }
+    section#section-info .info-image img {
+        width: 100%;
+    }
+    /* Summary */
+    section#summary .row {
+        padding: 70px 0;
+    }
+    section#summary h2 {
+        font-size: 30px;
+    }
+    section#summary p {
+        padding: 0;
+        font-size: 20px;
+    }
+    section#summary .table-content {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    section#summary table {
+        font-size: 15px;
+    }
+    section#summary table td, th {
+        padding: 15px;
+    }
+    section#summary table a {
+        font-size: .7rem;
+        padding: 1rem 2rem;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0 !important;
+        border-radius: 50px;
+    }
+    /* timetable */
+    section#timetable h2 {
+        font-size: 30px;
+    }
+    section#timetable table {
+        font-size: 15px;
+    }
+    section#timetable table td {
+        padding: 5px;
+    }
+    section#timetable table th {
+        padding: 5px;
+    }
+    section#timetable .workshops h2 {
+        font-size: 30px;
+    }
+    section#timetable a {
+        padding: 1.25rem 2.25rem;
+        margin-left: 0;
+        margin-right: 0 !important;
+    }
+    /* Sponsors */
+    section#sponsors {
+        padding: 70px 0;
+    }
+    section#sponsors h2 {
+        margin: 0;
+    }
+    section#sponsors .container .sponsors-items {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    section#sponsors .container .sponsors-items .item {
+        margin-top: 50px;
+        padding: 20px;
+    }
+    /* Contact */
+    section#contact .row {
+        padding: 50px;
+        padding-top: 80px;
+    }
+    section#contact h2 {
+        font-size: 20px;
+    }
+    section#contact .contact-items ul {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    section#contact .contact-items ul li {
+        margin-top: 40px;
+    }
+    section#contact ul p {
+        margin-top: 0;
+    }
+    section#contact ul i {
+        padding-bottom: 10px;
+    }
+    /* footer */
+    footer {
+        padding: 30px 0;
+    }
+    /*staff*/
+    section#staff h2 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+    section#staff .masters .master-item {
+        flex-basis: 50%;
+    }
+    section#staff h1 {
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    /* Navbar */
+    .navbar a:not(:nth-child(2)) {
+        display: none;
+    }
+    .navbar {
+        position: fixed;
+    }
+    .navbar a.icon {
+        float: left;
+        display: block;
+    }
+    .navbar.responsive {
+        position: fixed;
+    }
+    #nav-brand {
+        position: absolute;
+        display: block;
+        float: right;
+        margin: 0 !important;
+        margin-top: 20px !important;
+        margin-right: 10px !important;
+        padding: 0 !important;
+        right: 0;
+        font-size: 15px !important;
+        top: 0;
+        font-size: 1rem;
+        text-align: right;
+    }
+    .navbar.responsive a.icon {
+        position: absolute;
+    }
+    .navbar.responsive a:not(:first-child) {
+        margin-top: 20px;
+        float: none;
+        display: block;
+        text-align: right;
+    }
+    .navbar.responsive a:nth-child(3) {
+        margin-top: 40px;
+    }
+    /* Header */
+    header {
+        min-height: 100vh;
+        background-attachment: fixed;
+    }
+    header .row {
+        padding: 0;
+        padding-top: 50px;
+    }
+    header img {
+        margin-top: 50px;
+        width: 230px;
+        height: 200px;
+    }
+    header h1 {
+        font-size: 27px;
+        margin-top: 20px;
+    }
+    header #heading-link {
+        display: none;
+        font-size: 50px;
+        margin-top: 10px;
+    }
+    /* Info */
+    section#section-info {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    section#section-info h2 {
+        font-size: 30px;
+    }
+    section#section-info .row {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    section#section-info p {
+        font-size: 20px;
+        margin-top: 0;
+    }
+    section#section-info .info-image img {
+        width: 100%;
+    }
+    /* Summary */
+    section#summary .row {
+        padding: 70px 0;
+    }
+    section#summary h2 {
+        font-size: 30px;
+    }
+    section#summary p {
+        padding: 0;
+        font-size: 20px;
+    }
+    section#summary .table-content {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    section#summary table {
+        font-size: 15px;
+    }
+    section#summary table td, th {
+        padding: 15px;
+    }
+    section#summary table a {
+        font-size: .7rem;
+        padding: 1rem 2rem;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0 !important;
+        border-radius: 50px;
+    }
+    /* timetable */
+    section#timetable h2 {
+        font-size: 30px;
+    }
+    section#timetable table {
+        font-size: 15px;
+    }
+    section#timetable table td {
+        padding: 5px;
+    }
+    section#timetable table th {
+        padding: 5px;
+    }
+    section#timetable .workshops h2 {
+        font-size: 30px;
+    }
+    section#timetable a {
+        padding: 1.25rem 2.25rem;
+        margin-left: 0;
+        margin-right: 0 !important;
+    }
+    /* Sponsors */
+    section#sponsors {
+        padding: 70px 0;
+    }
+    section#sponsors h2 {
+        margin: 0;
+    }
+    section#sponsors .container .sponsors-items {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    section#sponsors .container .sponsors-items .item {
+        margin-top: 50px;
+        padding: 20px;
+    }
+    /* Contact */
+    section#contact .row {
+        padding: 50px;
+        padding-top: 80px;
+    }
+    section#contact h2 {
+        font-size: 20px;
+    }
+    section#contact .contact-items ul {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    section#contact .contact-items ul li {
+        margin-top: 40px;
+    }
+    section#contact ul p {
+        margin-top: 0;
+    }
+    section#contact ul i {
+        padding-bottom: 10px;
+    }
+    /* footer */
+    footer {
+        padding: 30px 0;
+    }
+    /*staff*/
+    section#staff h2 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+    section#staff .masters .master-item {
+        flex-basis: 50%;
+    }
+    section#staff h1 {
+        display: none;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    /* Navbar */
+    .navbar a:not(:nth-child(2)) {
+        display: none;
+    }
+    .navbar {
+        position: fixed;
+    }
+    .navbar a.icon {
+        float: left;
+        display: block;
+    }
+    .navbar.responsive {
+        position: fixed;
+    }
+    #nav-brand {
+        position: absolute;
+        display: block;
+        float: right;
+        margin: 0 !important;
+        margin-top: 20px !important;
+        margin-right: 10px !important;
+        padding: 0 !important;
+        right: 0;
+        font-size: 15px !important;
+        top: 0;
+        font-size: 1rem;
+        text-align: right;
+    }
+    #nav-brand:hover {
+        color: white !important;
+        background: transparent !important;
+        border: none !important;
+    }
+    .navbar a {
+        color: white !important;
+        background: transparent !important;
+        border: none !important;
+    }
+    .navbar.responsive a.icon {
+        position: absolute;
+    }
+    .navbar.responsive a:not(:first-child) {
+        margin-top: 20px;
+        float: none;
+        display: block;
+        text-align: right;
+    }
+    .navbar.responsive a:nth-child(3) {
+        margin-top: 40px;
+    }
+    /* Header */
+    header {
+        min-height: 100vh;
+        background-attachment: fixed;
+    }
+    header .row {
+        padding: 0;
+        padding-top: 50px;
+    }
+    header img {
+        margin-top: 50px;
+        width: 230px;
+        height: 200px;
+    }
+    header h1 {
+        font-size: 27px;
+        margin-top: 20px;
+    }
+    header #heading-link {
+        display: none;
+        font-size: 50px;
+        margin-top: 10px;
+    }
+    /* Info */
+    section#section-info {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    section#section-info h2 {
+        font-size: 30px;
+    }
+    section#section-info .row {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    section#section-info p {
+        font-size: 20px;
+        margin-top: 0;
+    }
+    section#section-info .info-image img {
+        width: 100%;
+    }
+    /* Summary */
+    section#summary .row {
+        padding: 70px 0;
+    }
+    section#summary h2 {
+        font-size: 30px;
+    }
+    section#summary p {
+        padding: 0;
+        font-size: 20px;
+    }
+    section#summary .table-content {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    section#summary table {
+        font-size: 15px;
+    }
+    section#summary table td, th {
+        padding: 15px;
+    }
+    section#summary table a {
+        font-size: .7rem;
+        padding: 1rem 2rem;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0 !important;
+        border-radius: 50px;
+    }
+    /* timetable */
+    section#timetable h2 {
+        font-size: 30px;
+    }
+    section#timetable table {
+        font-size: 15px;
+    }
+    section#timetable table td {
+        padding: 5px;
+    }
+    section#timetable table th {
+        padding: 5px;
+    }
+    section#timetable .workshops h2 {
+        font-size: 30px;
+    }
+    section#timetable a {
+        padding: 1.25rem 2.25rem;
+        margin-left: 0;
+        margin-right: 0 !important;
+    }
+    /* Sponsors */
+    section#sponsors {
+        padding: 70px 0;
+    }
+    section#sponsors h2 {
+        margin: 0;
+    }
+    section#sponsors .container .sponsors-items {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    section#sponsors .container .sponsors-items .item {
+        margin-top: 50px;
+        padding: 20px;
+    }
+    /* Contact */
+    section#contact .row {
+        padding: 50px;
+        padding-top: 80px;
+    }
+    section#contact h2 {
+        font-size: 20px;
+    }
+    section#contact .contact-items ul {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    section#contact .contact-items ul li {
+        margin-top: 40px;
+    }
+    section#contact ul p {
+        margin-top: 0;
+    }
+    section#contact ul i {
+        padding-bottom: 10px;
+    }
+    /* footer */
+    footer {
+        padding: 30px 0;
+    }
+    /*staff*/
+    section#staff h2 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+    section#staff h1 {
+        display: none;
+    }
+}
+
+/* Extra large devices (large desktops) */
+
+/* No media query since the extra-large breakpoint has no upper bound on its width */
