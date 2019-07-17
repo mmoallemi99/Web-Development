@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+@mixin typographyStyle($font, $size, $weight, $height, $color) {
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    color: $color;
+}
+
+@mixin typographyIcons($size, $color) {
+    font-size: $size;
+    color: $color;
+}
+
+
+//hexagon
+@mixin hexagonStyle($first, $second, $third, $forth, $fifth, $sixth) {
+    clip-path: polygon($first, $second, $third, $forth, $fifth, $sixth);
+}
+
+@mixin hexagonStyleSections($color, $point) {
+    clip-path: polygon(50% 0%, 100% 0, 100% 80%, $point, 0 78%, 0 0);
+    background: $color;
+}

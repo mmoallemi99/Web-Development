@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $base-color;
+}
+.container {
+    width: 75%;
+    margin: 0 auto; 
+}
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    height: inherit;
+    align-content: center; //don't use align-items, it stretches
+}
