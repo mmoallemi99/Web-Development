@@ -517,7 +517,13 @@ section#timetable .workshops h2 {
 section#sponsors .container .sponsors-items {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
+
+section#sponsors .container .sponsors-items .item {
+    flex-basis: 33.33%;
+    margin-top: 5%;
+} 
 
 section#sponsors {
     width: 100%;
