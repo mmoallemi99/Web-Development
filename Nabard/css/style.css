@@ -132,7 +132,7 @@ header #heading-link {
     font-size: 4rem;
     font-weight: 700;
     text-decoration: none;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     border: none;
     text-align: center;
     vertical-align: middle;
@@ -512,6 +512,11 @@ section#timetable .workshops h2 {
     margin-top: 50px;
 }
 
+section#timetable .bday {
+    text-align: center;
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+}
+
 /* sponsors section */
 
 section#sponsors .container .sponsors-items {
@@ -523,7 +528,7 @@ section#sponsors .container .sponsors-items {
 section#sponsors .container .sponsors-items .item {
     flex-basis: 33.33%;
     margin-top: 5%;
-} 
+}
 
 section#sponsors {
     width: 100%;
