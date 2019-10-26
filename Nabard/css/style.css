@@ -154,6 +154,69 @@ header #heading-link:hover {
     }
 }
 
+/* winners */
+
+section#winners {
+    width: 100%;
+    padding: 5rem 0;
+}
+
+section#winners h2 {
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+section#winners div img {
+    margin-bottom: 3%;
+    height: 110%;
+    width: 110%;
+}
+
+section#winners table {
+    width: 100%;
+    margin-top: 50px;
+    font-family: 'Vazir-Light', Fallback, sans-serif;
+    text-align: center;
+}
+
+section#winners table th, section#winners table td {
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+section#winners table a {
+    display: inline-block;
+    padding: 1.25rem 2.25rem;
+    background-color: #0f66e9;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10rem;
+    word-spacing: 1px;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+section#winners table a:first-child {
+    margin-right: 50px;
+}
+
+section#winners table a:hover {
+    background-color: #e2005a;
+}
+
+section#winners .table-content {
+    font-size: 1rem;
+}
+
 /* Info Section */
 
 section#section-info {

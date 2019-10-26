@@ -5,12 +5,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/05c23298b2.js"></script>
         <link rel="SHORTCUT ICON" href="./img/Emblem.jpg">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
         <title>مسابقه نبرد اپلیکیشن ها</title>
     </head>
 
@@ -36,11 +39,61 @@
                 <div class="row">
                     <img src="./img/nabardlogo.png" alt="مسابقه نبرد اپلیکیشن ها">
                     <h1 class="heading-1">دومین دوره از مسابقات نبرد اپلیکیشن ها</h1>
-                    <h2 style="font-family: 'Vazir-Light', Fallback, sans-serif; padding-top: 2%; color: white; font-size: 1.2rem;;">برای اطلاع از زمان بندی برنامه ها در روز مسابقه به قسمت زمان بندی و ثبت نام مراجعه فرمایید</h2>
+                    <h2 style="font-family: 'Vazir-Light', Fallback, sans-serif; padding-top: 2%; color: white; font-size: 1.2rem;;"
+                        dir="rtl">
+                        جهت مشاهده نتایج و عکس های مسابقه، به بخش بعدی مراجعه فرمایید.</h2>
                     <a href="#section-info" id="heading-link"><i class="fas fa-arrow-circle-down"></i></a>
                 </div>
             </div>
         </header>
+
+        <!-- winners -->
+        <section id="winners">
+            <div class="container">
+                <h2>تصاویر ثبت شده</h2>
+                <span class="underline"
+                    style="text-align: center; width: 20%; margin-left: 40%; margin-top: 2%; margin-bottom: 5%;"></span>
+                <div class="owl-carousel owl-theme load-owl-lazy">
+                    <div><img src="./img/Finals/1.JPG" alt=""></div>
+                    <div><img src="./img/Finals/2.JPG" alt=""></div>
+                    <div><img src="./img/Finals/3.JPG" alt=""></div>
+                    <div><img src="./img/Finals/4.JPG" alt=""></div>
+                    <div><img src="./img/Finals/5.JPG" alt=""></div>
+                    <div><img src="./img/Finals/6.JPG" alt=""></div>
+                    <div><img src="./img/Finals/7.JPG" alt=""></div>
+                    <div><img src="./img/Finals/8.JPG" alt=""></div>
+                    <div><img src="./img/Finals/9.JPG" alt=""></div>
+                    <div><img src="./img/Finals/10.JPG" alt=""></div>
+                </div>
+                <div style="margin-top: 10%;">
+                    <h2>نتایج مسابقه</h2>
+                    <span class="underline"
+                        style="text-align: center; width: 10%; margin-left: 45%; margin-top: 2%; margin-bottom: 5%;"></span>
+                    <table>
+                        <tr>
+                            <th>اعضا</th>
+                            <th>تیم های برتر</th>
+                        </tr>
+                        <tr>
+                            <td dir="rtl">میلاد محمدی - رضا فرهنگ - سهیل طاهری - عرفان نوریان - امیرحسین صفدریان - حسن عابدی - محمدرضا حامی</td>
+                            <td>(iBoard)تیم اول</td>
+                        </tr>
+                        <tr>
+                            <td>محمدعلی بشری موحد - زهرا قائدی - رضا شیری - علی غفرانی</td>
+                            <td>(Audiofier)تیم دوم</td>
+                        </tr>
+                        <tr>
+                            <td>حسین قجاوند - عارف یزدخواستی - عرفان نوریان</td>
+                            <td>(کلاسور)تیم سوم</td>
+                        </tr>
+                        <tr>
+                            <td>مهتاب معینی</td>
+                            <td>(اپلیکشن بازی برای کودکان مبتلا به سرطان )تیم منتخب مردمی</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
 
         <!-- Information -->
         <section id="section-info">
@@ -439,6 +492,9 @@
                 </p>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
         <script>
             function toggle_nav() {
                 var x = document.getElementById("navbarid");
@@ -450,6 +506,15 @@
                 }
             }
             $(document).ready(function () {
+                $(".owl-carousel").owlCarousel({
+                    items: 2,
+                    loop: true,
+                    center: true,
+                    mouseDrag: true,
+                    touchDrag: true,
+                    dots: true,
+                    margin: 100,
+                });
                 $("a").on('click', function (event) {
                     if (this.hash !== "") {
 
