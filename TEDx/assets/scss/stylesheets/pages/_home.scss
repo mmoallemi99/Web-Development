@@ -1,0 +1,195 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+//navbar
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: 3%;
+  width: 100%;
+}
+
+.navbar__brand {
+  flex-basis: 30%;
+}
+
+.navbar__menu {
+  flex-basis: 60%;
+}
+
+.navbar__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar__menu_list {
+  display: flex;
+  list-style: none;
+  margin-top: 0.5%;
+}
+
+.navbar__menu_list_item {
+  margin-right: 6%;
+  padding-bottom: 1%;
+  &:hover {
+    border-bottom: 2px solid red;
+  }
+}
+
+.navbar__menu_list_item_link {
+  text-decoration: none;
+}
+
+//sticky navbar
+.stickyNavbar {
+  display: flex;
+  padding: 1% 0;
+  border-bottom: 1px solid $light-gray;
+  background-color: $base-color;
+  box-shadow: 1px 1px 10px 1px $gray-color;
+}
+
+.stickyNavbar__brand {
+  margin-right: 5%;
+}
+
+.stickyNavbar__menu {
+  flex-basis: 70%;
+}
+
+.stickyNavbar__menu_list {
+  display: flex;
+  list-style: none;
+  margin-top: 0.5%;
+}
+
+.stickyNavbar__menu_list_item {
+  margin-right: 3%;
+}
+
+.stickyNavbar__menu_list_item_link {
+  text-decoration: none;
+}
+
+//description
+.description {
+  background-color: $description-background-color;
+  text-align: center;
+  padding: 8% 0 50% 0;
+}
+
+//countdown
+.countdown {
+  padding: 20% 0;
+  text-align: center;
+  background-color: $countdown-background-color;
+  margin-top: -10%;
+  clip-path: polygon(0 21%, 100% 0, 100% 100%, 0% 100%);
+}
+
+//speakers
+.speakers {
+  padding: 10% 0;
+  text-align: center;
+  background-color: $description-background-color;
+  margin-top: -10%;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+}
+
+// .speakers__people_person_image_overlay {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   background: rgba(221, 221, 221, 0);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   transition: all 0.5s ease-in-out;
+//   span {
+//     padding: 0 1%;
+//   }
+// }
+
+.speakers__people {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.speakers__people_person {
+  flex-basis: 33.33%;
+  margin: 3% 0;
+  position: relative;
+}
+
+// .speakers__people_person_image_overlay {
+//   position: absolute;
+//   top: 50%;
+//   left: 40%;
+//   // display: none;
+// }
+
+.speakers__people_person_image {
+  clip-path: circle(50% at 50% 50%);
+  margin-bottom: 10%;
+}
+
+.speakers__people_person_name {
+  margin-bottom: 3%;
+}
+
+.speakers__people_person_topic {
+  padding: 0 20%;
+}
+
+//what
+.what {
+  text-align: center;
+  padding: 5% 0 20% 0;
+  background-color: $what-background-color;
+}
+
+.what__explain {
+  display: flex;
+}
+
+.what__explain_ted_text,
+.what__explain_tedx_text {
+  margin-top: 5%;
+}
+
+.what__about {
+  margin-top: 10%;
+}
+
+.what__explain_ted,
+.what__explain_tedx {
+  padding: 0 5%;
+}
+
+//team
+.team {
+  background-color: $description-background-color;
+  text-align: center;
+  padding: 15% 0 10% 0;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.team__members {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.team__members_member {
+  flex-basis: 20%;
+  margin: 3% 0;
+  padding: 0 1%;
+}
+
+.team__members_member_image {
+  clip-path: circle(50% at 50% 50%);
+  margin-bottom: 10%;
+}

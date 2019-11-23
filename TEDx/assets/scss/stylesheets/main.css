@@ -1,0 +1,447 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar__container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header__container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+@font-face {
+  font-family: SF;
+  src: url("../../fonts/SF-UI-Display-Ultralight.otf");
+}
+
+@font-face {
+  font-family: SF_regular;
+  src: url("../../fonts/SF-UI-Display-Regular.otf");
+}
+
+@font-face {
+  font-family: SF_bold;
+  src: url("../../fonts/sf-ui-display-bold-58646a511e3d9.woff");
+}
+
+/**
+ * Basic typography style for copy text
+ */
+.navbar__menu_list_item_link {
+  font-family: SF;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: white;
+}
+
+.stickyNavbar__menu_list_item_link {
+  font-family: SF_regular;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: black;
+}
+
+.stickyNavbar__menu_list_item_link:hover {
+  font-family: SF_regular;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: red;
+}
+
+.description__title {
+  font-family: SF_regular;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: black;
+}
+
+.countdown__title {
+  font-family: SF_regular;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: black;
+}
+
+.speakers__title {
+  font-family: SF_regular;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: black;
+}
+
+.speakers__people_person_name {
+  font-family: SF_bold;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: black;
+}
+
+.speakers__people_person_topic {
+  font-family: SF_regular;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #616161;
+}
+
+.what__explain_ted_title,
+.what__explain_tedx_title,
+.what__about_title {
+  font-family: SF_regular;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: black;
+}
+
+.what__explain_ted_text,
+.what__explain_tedx_text {
+  font-family: SF_regular;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+}
+
+.team__title {
+  font-family: SF_regular;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: black;
+}
+
+.team__members_member_name {
+  font-family: SF_regular;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: black;
+}
+
+.team__members_member_position {
+  font-family: SF_regular;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #616161;
+}
+
+.footer__copyright {
+  font-family: SF_regular;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #BCBCBC;
+}
+
+.footer__link {
+  font-family: SF_regular;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: black;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  font-family: SF_regular;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: white;
+}
+
+.underline_black {
+  border: 2px solid black;
+  width: 15%;
+  display: inline-block;
+  margin-left: -1%;
+}
+
+.underline_red {
+  border: 2px solid #ff2b06;
+  width: 15%;
+  display: inline-block;
+}
+
+.header {
+  background-image: url("../../img/HeaderBG2.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -120px;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.footer {
+  padding: 2% 0;
+  background-color: black;
+  text-align: center;
+}
+
+.footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+.footer__socials_item {
+  padding: 0 2%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__socials_item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer__link {
+  padding: 1% 3%;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 2% 0;
+  background-color: white;
+  border: 2px solid white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__link:hover {
+  border: 2px solid white;
+  background: transparent;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: 3%;
+  width: 100%;
+}
+
+.navbar__brand {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.navbar__menu {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.navbar__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.navbar__menu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-top: 0.5%;
+}
+
+.navbar__menu_list_item {
+  margin-right: 6%;
+  padding-bottom: 1%;
+}
+
+.navbar__menu_list_item:hover {
+  border-bottom: 2px solid red;
+}
+
+.navbar__menu_list_item_link {
+  text-decoration: none;
+}
+
+.stickyNavbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1% 0;
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 10px 1px gray;
+          box-shadow: 1px 1px 10px 1px gray;
+}
+
+.stickyNavbar__brand {
+  margin-right: 5%;
+}
+
+.stickyNavbar__menu {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.stickyNavbar__menu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-top: 0.5%;
+}
+
+.stickyNavbar__menu_list_item {
+  margin-right: 3%;
+}
+
+.stickyNavbar__menu_list_item_link {
+  text-decoration: none;
+}
+
+.description {
+  background-color: #F3F3F3;
+  text-align: center;
+  padding: 8% 0 50% 0;
+}
+
+.countdown {
+  padding: 20% 0;
+  text-align: center;
+  background-color: #E9E9E9;
+  margin-top: -10%;
+  -webkit-clip-path: polygon(0 21%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 21%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.speakers {
+  padding: 10% 0;
+  text-align: center;
+  background-color: #F3F3F3;
+  margin-top: -10%;
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+}
+
+.speakers__people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.speakers__people_person {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  margin: 3% 0;
+  position: relative;
+}
+
+.speakers__people_person_image {
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  margin-bottom: 10%;
+}
+
+.speakers__people_person_name {
+  margin-bottom: 3%;
+}
+
+.speakers__people_person_topic {
+  padding: 0 20%;
+}
+
+.what {
+  text-align: center;
+  padding: 5% 0 20% 0;
+  background-color: #FFFFFF;
+}
+
+.what__explain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.what__explain_ted_text,
+.what__explain_tedx_text {
+  margin-top: 5%;
+}
+
+.what__about {
+  margin-top: 10%;
+}
+
+.what__explain_ted,
+.what__explain_tedx {
+  padding: 0 5%;
+}
+
+.team {
+  background-color: #F3F3F3;
+  text-align: center;
+  padding: 15% 0 10% 0;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.team__members {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.team__members_member {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  margin: 3% 0;
+  padding: 0 1%;
+}
+
+.team__members_member_image {
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  margin-bottom: 10%;
+}
+/*# sourceMappingURL=main.css.map */

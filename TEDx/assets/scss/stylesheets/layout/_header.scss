@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header {
+  background-image: url("../../img/HeaderBG2.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -120px;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
